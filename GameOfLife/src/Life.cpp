@@ -56,16 +56,16 @@ void Life::Tick() {
 
 			int cellsAround = GetCellsAround(i, j);
 
-			if(currentGen[i][j]) { // If cell is an alive
+			if(currentGen[i][j]) {
 				if(cellsAround == 3 || cellsAround == 2) {
 					continue;
 				}else {
-					nextGen[i][j]= 0; // Kill
+					nextGen[i][j]= 0;
 				}
 
 			}else { // Dead
 				if(cellsAround == 3) {
-					nextGen[i][j] = 1; // Spawn
+					nextGen[i][j] = 1;
 				}
 
 			}
