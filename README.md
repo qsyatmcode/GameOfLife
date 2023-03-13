@@ -1,6 +1,8 @@
 # GameOfLife
 Simple implementation of the game of life in the console. 
 
+It is possible to generate a game field of a given size with a random arrangement of living cells of the first generation or upload a .txt file with a game field created by you. Unfortunately now the second action is very error-prone, because I wrote it in a hurry and do not catch errors. For example: if there will be a character in the file that is different from 1 or 0, I think there will be a fatal error. 
+
 Disadvantages: 
   Slow, 
   Uses third-party library PDcurses
